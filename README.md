@@ -35,12 +35,11 @@ EV | Dimension | Ereignis
 0 | Direction | ohne
 0 | Filter Class | Unfiltered
 
-
-
-
-
 ## JSON-File:
-On each section 'rex'-Attribute is value of Table
+
+On each section there is 'rex'-Attribute.  
+For example in original table **"MME_TEST_OBJECTS"** there is column with name **"TEST_OBJECT"**, and same for other tables. In my case, I will have only one attribute in all objects in JSON-file.
+
 ```json
 {
   "F1": [
@@ -192,10 +191,9 @@ On each section 'rex'-Attribute is value of Table
 }
 ```
 
-
-
-
-
+## TODO
+[] add option to save dafeault column name
+[] export in CSV-format
 
 [isoDB]: http://www.iso-mme.org/forum/viewtopic.php?f=105&t=441
 [isoForum]: http://www.iso-mme.org/forum/
