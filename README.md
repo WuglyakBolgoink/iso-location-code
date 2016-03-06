@@ -20,7 +20,7 @@ java -jar mdbgrabber.jar
 ```
 
 ## ISO Location Code
-![ISO code](images/ilc.svg)
+![ISO code](https://cdn.rawgit.com/cyberkatze/iso-location-code/master/images/ilc.svg)
 
 For example [**S0CONT000015EV00**]:
 Code name | Type | Description (Germany)
