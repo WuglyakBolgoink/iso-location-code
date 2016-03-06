@@ -192,8 +192,9 @@ For example in original table **"MME_TEST_OBJECTS"** there is column with name *
 ```
 
 ## TODO
-[] add option to save dafeault column name
-[] export in CSV-format
+
+- [ ] add option to save dafeault column name
+- [ ] export in CSV-format
 
 [isoDB]: http://www.iso-mme.org/forum/viewtopic.php?f=105&t=441
 [isoForum]: http://www.iso-mme.org/forum/
