@@ -13,8 +13,7 @@ java -jar mdbgrabber.jar
  -?                  Show help
  -h,--help           Show help
  -i,--input <arg>    Path until *.MDB database
- -o,--output <arg>   Path until output JSON file, if not getting export in
-                     'out.json'-file
+ -o,--output <arg>   Path until output JSON file, if not getting export in 'out.json'-file
  -s,--stat           Show stat
  -v,--version        Show version
 ```
