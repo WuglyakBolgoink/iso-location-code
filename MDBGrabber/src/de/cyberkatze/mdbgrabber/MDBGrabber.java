@@ -17,7 +17,6 @@ public class MDBGrabber {
      * @throws Exception
      */
     public static void main(final String[] args) throws Exception {
-        // -------------
         // create Options object
         Options options = new Options();
 
@@ -30,7 +29,6 @@ public class MDBGrabber {
         options.addOption("v", "version", false, "Show version");
         options.addOption("s", "stat", false, "Show stat");
 
-        // -------------
         // parse command line args
         try {
             CommandLineParser parser = new DefaultParser();
@@ -61,8 +59,6 @@ public class MDBGrabber {
             }
 
             if (cmd.hasOption("?") || cmd.hasOption("h")) {
-                System.out.println("show help");
-                // automatically generate the help statement
                 HelpFormatter formatter = new HelpFormatter();
                 formatter.printHelp("MDBGrabber", options);
             }
@@ -77,7 +73,7 @@ public class MDBGrabber {
             }
 
             if ((inputFilePath != null) && (outputFilePath != null)) {
-                ISORex iso = new ISORex(inputFilePath);// ISORex("/home/cyberkatze/workspaces/eclipse/mme_code.mdb");
+                ISORex iso = new ISORex(inputFilePath);
 
                 if (stat) {
                     iso.printStat();
