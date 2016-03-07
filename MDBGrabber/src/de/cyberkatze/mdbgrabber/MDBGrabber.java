@@ -1,7 +1,9 @@
 package de.cyberkatze.mdbgrabber;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -79,15 +81,12 @@ public class MDBGrabber {
                     iso.printStat();
                 }
 
+                Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputFilePath), "UTF-8"));
                 try {
-                    FileWriter file = new FileWriter(outputFilePath);
-                    file.write(iso.getJSON().toJSONString());
-                    file.flush();
-                    file.close();
+                    out.write(iso.getJSON().toJSONString());
+                } finally {
+                    out.close();
                     System.out.println("File saved:" + outputFilePath);
-
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
 
                 iso.closeDB();
